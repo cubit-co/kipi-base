@@ -1,6 +1,6 @@
 {
   "name": "kipi-base",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Base for the build functions",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/cubit-co/kipi-base#readme",
   "dependencies": {
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.24"
+    "mongoose": "^5.9.24",
+    "uuid": "^8.2.0"
   }
 }

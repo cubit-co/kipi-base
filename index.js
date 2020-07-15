@@ -1,6 +1,6 @@
 'use strict'
 
-const UUIDv4 = require("uuid/v4"),
+const { v4: UUIDv4 } = require("uuid"),
     ErrorResponses = require("./constants/errorResponses"),
     SuccessResponses = require("./constants/successResponses"),
     mongoose = require('mongoose'),
