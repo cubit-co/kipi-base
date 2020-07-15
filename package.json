@@ -1,0 +1,26 @@
+{
+  "name": "kipi-base",
+  "version": "1.0.0",
+  "description": "Base for the build functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cubit-co/kipi-base.git"
+  },
+  "keywords": [
+    "kipi"
+  ],
+  "author": "Cubit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cubit-co/kipi-base/issues"
+  },
+  "homepage": "https://github.com/cubit-co/kipi-base#readme",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.24"
+  }
+}
