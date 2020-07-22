@@ -1,6 +1,6 @@
 {
   "name": "kipi-base",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Base for the build functions",
   "main": "index.js",
   "scripts": {

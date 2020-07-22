@@ -9,8 +9,16 @@ const { v4: UUIDv4 } = require("uuid"),
 let isConnected;
 mongoose.Promise = global.Promise;
 class Base {
-    constructor(event) {
+
+    constructor() {
+        this.event = null;
+        this.context = null;
+    }
+
+    initialize(event, context) {
+        context.callbackWaitsForEmptyEventLoop = false;
         this.event = event;
+        this.context = context;
     }
 
     createErrorResponse(statusName, message = null, error = null) {
@@ -74,7 +82,7 @@ class Base {
     }
 
     getPayload(token) {
-        let decodedToken =  jwt.decode(token);
+        let decodedToken = jwt.decode(token);
         return decodedToken.payload;
     }
 }
