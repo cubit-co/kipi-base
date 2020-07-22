@@ -83,7 +83,7 @@ class Base {
 
     getPayload(token) {
         let decodedToken = jwt.decode(token);
-        return decodedToken.payload;
+        return decodedToken;
     }
 }
 
